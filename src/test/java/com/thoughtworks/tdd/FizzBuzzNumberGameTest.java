@@ -10,13 +10,13 @@ public class FizzBuzzNumberGameTest {
 		
 		// Given
 		int number = 1;
-		FizzBussNumberGame fizzBussNumberGame = new FizzBussNumberGame();
+		FizzBuzzNumberGame fizzBuzzNumberGame = new FizzBuzzNumberGame();
 	
 		// When
-		String word = fizzBussNumberGame.fizzBuzz(number);
+		String word = fizzBuzzNumberGame.fizzBuzz(number);
 	
 		// Then
-		Assertions.assertEquals("1", word );
+		Assertions.assertEquals("1", word);
 	}
 	
 	@Test
@@ -24,14 +24,27 @@ public class FizzBuzzNumberGameTest {
 		
 		// Given
 		int number = 3;
-		FizzBussNumberGame fizzBussNumberGame = new FizzBussNumberGame();
+		FizzBuzzNumberGame fizzBuzzNumberGame = new FizzBuzzNumberGame();
 		
 		// When
-		String word = fizzBussNumberGame.fizzBuzz(number);
+		String word = fizzBuzzNumberGame.fizzBuzz(number);
 		
 		// Then
-		Assertions.assertEquals("fizz", word);
+		Assertions.assertEquals("fizz", word);		
+	}
+	
+	@Test
+	public void should_return_buss_when_fizzBuzz_given_5() {
 		
+		// Given
+		int number = 5;
+		FizzBuzzNumberGame fizzBuzzNumberGame = new FizzBuzzNumberGame();
+		
+		// When
+		String word = fizzBuzzNumberGame.fizzBuzz(number);
+		
+		// Then
+		Assertions.assertEquals("buzz", word);		
 	}
 
 }

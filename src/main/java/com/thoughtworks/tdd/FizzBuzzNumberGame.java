@@ -1,13 +1,15 @@
 package com.thoughtworks.tdd;
 
-public class FizzBussNumberGame {
+public class FizzBuzzNumberGame {
 	
 	//private int number;
 	
 	public String fizzBuzz(int number) {
 		if (number%3 == 0) {
 			return "fizz";
+		}else if(number%5 == 0) {
+			return "buzz";
 		}
-		return "1";
+		return Integer.toString(number);
 	}
 }
